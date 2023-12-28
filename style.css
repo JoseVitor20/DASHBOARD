@@ -1,0 +1,375 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.container{
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+div.clear{clear: both;}
+
+div.DASHBOARD{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+}
+
+/* sidebar */
+
+    div.sidebar {
+        float: left;
+        width: 20%;
+        height: 100%;
+        background-color: rgb(56, 50, 50);
+    }
+
+    div.topo{
+        width: 100%;
+        height:9.4vmin;
+        background-color: rgb(75, 70, 70);
+        font-size: 1.4vmax;
+        color: #c4c4c4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid rgb(148, 148, 148);
+    }
+
+    div.menu{
+        padding:0px 3.6vmin;
+    }
+
+    div.menu ul li, a{
+        color: #9f9f9f;
+        text-decoration: none;
+        list-style-type: none;
+        transition: .2s;
+    }
+
+    div.menu li{
+        margin: 1.6vmax 0;
+    }
+
+    div.menu ul:hover :not(:hover){
+        transform: scale(.9);
+    }
+
+    div.menu li:hover i{
+        color: rgb(0, 183, 173);
+    }
+
+    div.menu a,i{
+        font-size:1.1vmax;
+    }
+
+/* min-content */
+
+    div.min-content{
+        float: left;
+        width: 80%;
+        height: 100%;
+        position: relative;
+    }
+
+    header{
+        width: 100%;
+        background-color: white;
+        padding:2.6vmin 15px;
+        border-bottom: 2px solid rgb(103, 103, 103);
+    }
+
+    div.area-menu i:hover{
+        color: rgb(129, 128, 128);
+        transform: scale(.9);
+    }
+
+    i#menu_fechado{
+        font-size: 6vmin;
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        left: 3vmin;
+        top: 2vmin;
+    }
+
+    div.pesquisa-campo{
+        float: right;
+    }
+
+    div.icone-pesquisa{
+        background-color: #d6d6d6;
+        color: white;
+        float: left;
+        width: 4vmin;
+        height: 4vmin;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1vmin 0 4vmin;
+        cursor: pointer;
+    }
+
+    div.icone-pesquisa:hover{
+        transform: scale(.9);
+        background-color:gray;
+    }
+
+    div.pesquisa-campo form{
+        display: inline-block;
+    }
+
+    div.pesquisa-campo form input[type=text]{
+        width:25vmin;
+        height: 4vmin;
+        outline: none;
+        border-radius: 1vmin;
+        border: 1px solid rgb(171, 170, 170);
+        padding-left: 10px;
+    }
+
+    div.pesquisa-campo form input[type=text]:focus{
+        margin-left: 1.1vmin;
+        transform: scale(1.1);
+        font-weight: bold;
+    }
+
+    div.icone-alerta{
+        margin-left: 3vmin;
+        float: right;
+        color: #ff0000;
+        width: 4vmin;
+        height: 4vmin;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    div.icone-alerta:hover{
+        transform: scale(.9);
+        color: #fb6e6e;
+    }
+
+    div.icone-alerta i{
+        font-size:3.4vmin;
+    }
+
+    div.icone-alerta p{
+        position: absolute;
+        top:-1vmin;
+        right: 0;
+        color: black;
+        font-weight: bold;
+    }
+
+/* Content1 */
+
+    div.conter_container{
+        width: 70%;
+        height: 100%;
+        padding: 20px;
+        background-color: rgb(208, 208, 208);
+        float: left;
+        overflow-y: auto;
+        padding-bottom: 7vmax;
+    }    
+
+    div.content1{
+        float: left;
+        width: 100%;
+        padding: .5vmin;
+        }
+
+    div.painel{
+        width: 100%;
+        border: 2px solid #ababab;
+        background-color: white;
+        padding: 20px;
+    }
+
+    div.painel h2{
+        color: #7E7E7E;
+        font-weight: normal;
+        font-size: 1.4vmax;
+    }
+    
+    div.painel p{
+        color: #616060;
+        font-weight: normal;
+        font-size: 1.1vmax;
+        margin-top: 1.1vmin;
+    }
+
+    div.w50{
+        width: 50%;
+    }
+
+/* ultimas-atividades */
+
+    div.ultimas-atividades{
+        float: left;
+        width: 30%;
+        height: 100%;
+        overflow-y: auto;
+        background-color: #aaabab;
+        padding-bottom: 10vmax;
+    }
+
+    div.atividades-topo h2{
+        color:rgb(60, 60, 60);
+        font-size: 3vmin;
+        font-weight: normal;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 2px solid gray;
+        margin: 20px 0;
+    }
+
+    div.atividades-registro{
+        padding: 0px 4vmin;
+    }
+
+    div.conter{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    div.efeito{
+        position: relative;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    div.conteudo{
+        width: 100%;
+        padding-left: 2vmax;
+    }
+
+    div.conteudo p{
+        font-size: .9vmax;
+        padding-bottom:1.4vmax;
+    }
+
+    h2.atualizacao{
+        font-size: 1.3vmax;
+        font-weight: normal;
+        padding-bottom: 1.4vmax;
+        text-decoration: underline;
+    }
+
+    h2.destaque{
+        font-size: 1vmax;
+        font-weight: normal;
+        padding: .5vmin 0;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    div.marcacao{
+        width: 2vmax;
+        height: 2vmax;
+        border-radius: 100%;
+        border: 1px solid black;
+    }
+
+    div.linha{
+        width: 2px;
+        height: 80%;
+        background-color: black;
+    }
+
+    @media screen and (max-width:1000px){
+        div.sidebar{
+            width: 40%;
+            display: none;
+            position: absolute;
+            left: 0%;
+            z-index: 999;
+        }
+        div.min-content{
+            width: 100%;
+        }
+
+        div.topo{
+            margin-bottom: 30px;
+            font-size:2.4vmax;
+        }
+
+        div.menu a,i{
+            font-size:3vmax;
+        }
+
+        i#menu_fechado{
+            font-size: 6vmin;
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            left: 3vmin;
+            top: 2vmin;
+        }
+    
+        i#menu_fechado{display: block;}
+    
+        div.DASHBOARD{
+            overflow: auto;
+        }
+
+        div.conter_container{
+            width: 100%;
+            height: auto;
+            overflow-y: visible;
+        }     
+
+        div.ultimas-atividades{
+            width: 100%;
+            height: auto;
+            overflow: visible;
+        }
+    
+        div.painel h2{
+            font-size: 2.5vmax;
+        }
+        
+        div.painel p{
+            font-size: 2vmax;
+            margin-top: 1.5vmin;
+        }
+
+        h2.atualizacao{
+            font-size: 2.4vmax;
+        }
+    
+        h2.destaque{
+            font-size: 2vmax;
+            font-weight: normal;
+            padding: .5vmin 0;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        div.conteudo p{
+            font-size: 1.8vmax;
+            padding-bottom:1.4vmax;
+        }
+
+        div.marcacao{
+            width: 4vmax;
+            height: 4vmax;
+        }
+    
+    }
